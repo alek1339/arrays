@@ -8,12 +8,19 @@
   </head>
   <body>
     <p>Task 1</p>
-    <input type="text" id="newPayment" />
+    <input type="number" id="amount" placeholder="Amount">
+    <input type="text" id="description" placeholder="Description"/>
+    <select id="type">
+      <option value="cost">cost</option>
+      <option value="profit" selected="selected">profit</option>
+    </select>
     <button onclick="pushToArray()">Push</button>
     <button onclick="unshiftToArray()">Unshift</button>
     <button onclick="deleteElement()">Delete</button>
+    <button onclick="getLastElement()">Last</button>
     <hr />
     <p>Task 2</p>
+    <button onclick="calcProfit()">All Profits</button>
 
     <script src="task-1.js"></script>
   </body>
